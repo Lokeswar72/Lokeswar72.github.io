@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hacker Portfolio | Manipal University</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="layout-container">
+        <!-- Sidebar Navigation -->
+        <nav id="sidebar">
+            <div class="logo" id="sidebar-toggle" title="Toggle Sidebar">
+                <i class="fas fa-dragon"></i>
+                <span>&lt;AI_Hacker&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active"><i class="fas fa-terminal"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="fas fa-user-secret"></i> <span>About</span></a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> <span>Skills</span></a></li>
+                <li><a href="#projects"><i class="fas fa-laptop-code"></i> <span>Projects</span></a></li>
+                <li><a href="#certifications"><i class="fas fa-certificate"></i> <span>Certifications</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/Lokeswar72" target="_blank" class="social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lokeswar-reddy-basireddy/" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content">
+
+            <!-- Hero Section -->
+            <section id="hero">
+                <canvas id="hero-canvas"></canvas>
+                <div class="hero-content">
+                    <h1 class="hero-entry">
+                        <span class="glitch" data-text="Hello, I'm Lokeswar">Hello, I'm <br><span
+                                class="highlight">Lokeswar</span></span>
+                    </h1>
+                    <p class="subtitle hero-entry delay-200"><span id="typing-text"></span><span
+                            class="typing-cursor"></span></p>
+                    <p class="bio hero-entry delay-400"
+                        style="font-size: 1.1rem; color: var(--text-secondary); max-width: 500px; line-height: 1.6;">
+                        Building the future with Artificial Intelligence and Cybersecurity.</p>
+                    <a href="#projects" class="cta-button hero-entry delay-600">View My Work</a>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-id-badge-container">
+                        <div class="hero-id-badge">
+                            <div class="badge-header">ACCESS GRANTED</div>
+                            <!-- Hidden Secret Layer (Revealed by Torch) -->
+                            <div class="badge-secret-layer">
+                                <div class="secret-binary">01010101 10101010 00110011</div>
+                                <div class="secret-text">CONFIDENTIAL</div>
+                                <div class="secret-binary">11001100 01010101 11110000</div>
+                                <div class="secret-text">TOP SECRET</div>
+                                <div class="secret-binary">00001111 10101010 01010101</div>
+                                <div class="secret-stamp">CLASSIFIED</div>
+                            </div>
+                            <div class="badge-content">
+                                <div class="badge-photo">
+                                    <img src="assets/avatar.png" alt="Profile">
+                                    <div class="scanner-line"></div>
+                                </div>
+                                <div class="badge-details">
+                                    <h3 class="glitch-text" data-text="AI HACKER">AI HACKER</h3>
+                                    <div class="badge-info">
+                                        <p>ID: <span class="code-number">#CYBER-001</span></p>
+                                        <p>LVL: <span class="code-number">ADMIN</span></p>
+                                        <p>DEPT: <span class="code-string">SEC_OPS</span></p>
+                                    </div>
+                                </div>
+                                <div class="badge-barcode"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2 class="fade-in">01. About Me</h2>
+                <div class="about-container fade-in">
+                    <div class="about-text">
+                        <p>I am a <span class="highlight">Computer Science Engineering student</span> specializing in
+                            <span class="highlight">Cyber Security</span> at Manipal University, currently pursuing a
+                            minor in <span class="highlight">AI & ML</span>.
+                        </p>
+                        <p>My journey is fueled by a dual passion: offensive security and intelligent systems. I am
+                            actively learning <span class="highlight">Ethical Hacking</span> while building AI agents
+                            that can see and understand the world. My goal is to merge these fields to create
+                            self-defending networks and smarter security protocols.</p>
+                    </div>
+                    <div class="terminal-window animate-on-scroll scale-up">
+                        <div class="terminal-header">
+                            <div class="buttons">
+                                <span class="close"></span>
+                                <span class="minimize"></span>
+                                <span class="maximize"></span>
+                            </div>
+                            <div class="title">root@kali: ~</div>
+                        </div>
+                        <div class="terminal-body" style="font-family: 'Fira Code', monospace; line-height: 1.5;">
+                            <div class="shell-line">
+                                <span style="color: #00ff9d;">root@kali</span>:<span style="color: #3d8bff;">~</span>#
+                                <span class="typing-command">./profile.sh</span>
+                            </div>
+                            <br>
+                            <div class="command-output">
+                                <p><span style="color: #00ff9d;">[+]</span> <strong style="color: #fff;">Name:</strong>
+                                    Lokeswar</p>
+                                <p><span style="color: #00ff9d;">[+]</span> <strong style="color: #fff;">Role:</strong>
+                                    Cyber Security & AI Enthusiast</p>
+                                <p><span style="color: #00ff9d;">[+]</span> <strong
+                                        style="color: #fff;">Location:</strong> Manipal, India</p>
+                                <br>
+                                <p><span style="color: #00ff9d;">[*]</span> <strong style="color: #fff;">Bio:</strong>
+                                </p>
+                                <p style="color: #ccc; padding-left: 20px;">
+                                    I bridge the gap between offensive security and artificial intelligence.
+                                    My passion lies in building secure, intelligent systems that can adapt
+                                    and defend against evolving cyber threats.
+                                </p>
+                            </div>
+                            <br>
+                            <div id="terminal-history">
+                                <!-- Initial content will be moved here or generated by JS -->
+                            </div>
+
+                            <div class="shell-line input-line" style="display: none;" id="terminal-input-line">
+                                <span style="color: #00ff9d;">root@kali</span>:<span style="color: #3d8bff;">~</span>#
+                                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <!-- Secret Layer for Background -->
+                <div class="badge-secret-layer" style="z-index: 0; pointer-events: none;">
+                    <!-- Top Left -->
+                    <div class="secret-data" style="position: absolute; top: 5%; left: 5%; text-align: left;">
+                        <div class="secret-binary">0x4F 0xA1 0x00 0xFF</div>
+                        <div class="secret-binary">0x1B 0x2C 0x3D 0x4E</div>
+                        <div class="secret-text" style="font-size: 1.5rem; opacity: 0.3;">SECURE SECTOR</div>
+                    </div>
+
+                    <!-- Top Right -->
+                    <div class="secret-data" style="position: absolute; top: 10%; right: 5%; text-align: right;">
+                        <div class="secret-binary">SYSTEM_ID: KALI_LINUX</div>
+                        <div class="secret-binary">IP: 192.168.1.X [HIDDEN]</div>
+                        <div class="secret-stamp" style="font-size: 3rem; transform: rotate(10deg); opacity: 0.2;">
+                            ENCRYPTED</div>
+                    </div>
+
+                    <!-- Center -->
+                    <div class="secret-data"
+                        style="position: absolute; top: 40%; left: 50%; transform: translateX(-50%); text-align: center;">
+                        <div class="secret-text" style="font-size: 5rem; opacity: 0.05; letter-spacing: 20px;">
+                            CLASSIFIED</div>
+                    </div>
+
+                    <!-- Bottom Left -->
+                    <div class="secret-data" style="position: absolute; bottom: 10%; left: 2%; opacity: 0.4;">
+                        <div class="secret-binary" style="font-size: 0.6rem;">
+                            101010101010101010101010<br>
+                            010101010101010101010101<br>
+                            001100110011001100110011
+                        </div>
+                    </div>
+
+                    <!-- Bottom Right -->
+                    <div class="secret-data" style="position: absolute; bottom: 15%; right: 5%; text-align: right;">
+                        <div class="secret-text" style="color: #ff3333; border-color: #ff3333;">WARNING: ACTIVE SCAN
+                        </div>
+                    </div>
+                </div>
+                <h2 class="animate-on-scroll slide-left">02. Experience</h2>
+                <div class="timeline">
+                    <!-- Timeline items can be staggered -->
+                    <div class="timeline-item animate-on-scroll slide-right delay-100">
+                        <div class="timeline-content">
+                            <span class="date">Oct 2023 - Nov 2023</span>
+                            <h3>AI Intern</h3>
+                            <h4>Pantech Solutions</h4>
+                            <p>Worked on implementing Computer Vision models for real-time object detection and
+                                analysis,
+                                optimizing inference speed by 30%.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-on-scroll slide-right delay-200">
+                        <div class="timeline-content">
+                            <span class="date">Learning Journey</span>
+                            <h3>Ethical Hacking & AI/ML</h3>
+                            <h4>Self-Paced / Academic</h4>
+                            <p>Specializing in Cyber Security architecture while simultaneously mastering Machine
+                                Learning algorithms to build robust, intelligent defense systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2 class="animate-on-scroll slide-left">03. Skills</h2>
+                <div class="system-status-bar animate-on-scroll fade-in delay-100">
+                    <span class="status-indicator"></span>
+                    <span class="status-text">[ SYSTEM: ONLINE ] Awaiting Neural Interface...</span>
+                </div>
+                <!-- Skill Tree Structure (JS Rendered) -->
+                <div id="skill-tree-wrapper" class="animate-on-scroll scale-up delay-200"
+                    style="position: relative; width: 100%; min-height: 600px; overflow: visible;">
+                    <button id="reset-tree"
+                        style="position: absolute; top: 0; right: 0; z-index: 20; background: rgba(10,10,10,0.8); border: 1px solid var(--accent-color); color: var(--accent-color); font-family: 'Fira Code', monospace; padding: 5px 10px; cursor: pointer; font-size: 0.8rem; transition: all 0.3s ease;">
+                        [ Reset View ]
+                    </button>
+                    <svg id="tree-svg"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;"></svg>
+                    <div id="skill-tree-container"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2 class="animate-on-scroll slide-left">04. Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate-on-scroll scale-up delay-100">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>YOLO Interview Monitor</h3>
+                            <p>Real-time AI-based proctoring system using YOLOv8 to detect unauthorized objects during
+                                online exams.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">YOLOv8</span>
+                                <span class="tech-tag">OpenCV</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/yolo-interview-monitor" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card animate-on-scroll scale-up delay-200">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-file-shield"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>File Encryptor</h3>
+                            <p>Secure File Encryption & Decryption Tool using AES-256-GCM with master key management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Cryptography</span>
+                                <span class="tech-tag">AES-256</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/file-encryptor" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card animate-on-scroll scale-up delay-300">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Password Analyzer</h3>
+                            <p>Interactive web application that evaluates password strength in real-time with
+                                Matrix-inspired aesthetics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/PasswordAnalyzer" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card animate-on-scroll scale-up delay-100">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>PortScanner</h3>
+                            <p>Active reconnaissance tool scanning for open TCP/UDP ports with automated CSV/HTML
+                                reporting.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Networking</span>
+                                <span class="tech-tag">Socket</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/portsacnner" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card animate-on-scroll scale-up delay-200">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Classical Cipher</h3>
+                            <p>Implementation of classical cryptography algorithms including Caesar, Vigenère, and Hill
+                                ciphers in C.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Cryptography</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/classical_cipher" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card animate-on-scroll scale-up delay-300">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>Face Detection System</h3>
+                            <p>Real-time face detection application capable of identifying and tracking faces in video
+                                streams.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lokeswar72/face-detection-" target="_blank"
+                                    style="color: var(--accent-color); margin-right: 15px;"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications">
+                <h2 class="animate-on-scroll slide-left">05. Certifications</h2>
+                <div class="cert-grid">
+
+                    <!-- New Placeholders for User to Fill -->
+                    <div class="cert-card animate-on-scroll fade-in delay-400">
+                        <i class="fas fa-shield-alt cert-icon"></i>
+                        <div>
+                            <h3>Security Operations Center in Practice</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem;">IBM</p>
+                        </div>
+                    </div>
+                    <div class="cert-card animate-on-scroll fade-in delay-500 google-cert-card" id="google-cert-toggle">
+                        <i class="fab fa-google cert-icon"></i>
+                        <div style="width: 100%;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <h3 style="margin-bottom: 0;">Google Cloud Certifications</h3>
+                                <i class="fas fa-chevron-down" id="google-cert-arrow"
+                                    style="transition: transform 0.3s;"></i>
+                            </div>
+                            <div id="google-cert-list"
+                                style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; opacity: 0; transition: all 0.5s ease;">
+                                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 15px;">
+                                    <div style="display: flex; gap: 8px; align-items: start;">
+                                        <i class="fas fa-angle-right"
+                                            style="color: var(--accent-color); margin-top: 4px;"></i>
+                                        <span style="font-size: 0.95rem;">Inspect Rich Documents with Gemini
+                                            Multimodality and Multimodal RAG</span>
+                                    </div>
+                                    <div style="display: flex; gap: 8px; align-items: start;">
+                                        <i class="fas fa-angle-right"
+                                            style="color: var(--accent-color); margin-top: 4px;"></i>
+                                        <a href="https://www.credly.com/badges/485faef9-4649-4506-8658-4d7946ed1145/public_url"
+                                            target="_blank"
+                                            style="font-size: 0.95rem; color: var(--text-primary); text-decoration: none; border-bottom: 1px dotted var(--accent-color); transition: color 0.3s;">Develop
+                                            GenAI Apps with Gemini and Streamlit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2 class="fade-in">06. Contact</h2>
+                <div class="contact-container fade-in">
+                    <div class="contact-info">
+                        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say
+                            hi, I'll try my best to get back to you!</p>
+                        <br>
+                        <p><i class="fas fa-envelope"></i> lokeswar140306@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Manipal, India</p>
+                        <div style="margin-top: 2rem;">
+                            <a href="assets/resume.pdf" download class="cta-button"
+                                style="display: inline-block; padding: 10px 20px; background: transparent; border: 1px solid var(--accent-color); color: var(--accent-color); text-decoration: none; font-weight: bold; border-radius: 4px;">Download
+                                Resume</a>
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- CRT/Video Overlay -->
+    <div id="crt-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
