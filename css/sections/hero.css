@@ -960,12 +960,12 @@
 
 @media (max-width: 900px) {
     #hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         text-align: center;
         gap: 3.5rem;
-        padding: 6rem 1.5rem 2rem 1.5rem;
+        padding: 6rem 1.2rem 2rem 1.2rem;
     }
 
     .hero-content {
@@ -973,45 +973,72 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: 100%;
     }
 
     .hud-greeting-container {
         padding: 16px 20px;
         width: 100%;
         max-width: 100%;
+        min-width: auto; /* Reset fixed min-width to prevent mobile overflow */
         margin-bottom: 2.5rem;
     }
 
+    .greet-text {
+        font-size: 2.5rem; /* Scale down greeting header on mobile to prevent overflow */
+        letter-spacing: -1px;
+    }
+
+    .role-title {
+        font-size: 1.1rem; /* Scale down typewriter text size on mobile */
+        white-space: normal; /* Allow typewriter text to wrap on mobile screens */
+    }
+
+    /* Position corners to align with borders to prevent horizontal page overflow */
     .top-left {
-        top: -16px;
-        left: -20px;
+        top: -2px;
+        left: -2px;
     }
 
     .top-right {
-        top: -16px;
-        right: -20px;
+        top: -2px;
+        right: -2px;
     }
 
     .bottom-left {
-        bottom: -16px;
-        left: -20px;
+        bottom: -2px;
+        left: -2px;
     }
 
     .bottom-right {
-        bottom: -16px;
-        right: -20px;
+        bottom: -2px;
+        right: -2px;
     }
 
     .hud-tag {
-        top: -30px;
-        left: -5px;
+        top: -25px;
+        left: 2px;
         font-size: 0.55rem;
     }
 
-
+    .hero-briefing {
+        max-width: 100%;
+        text-align: left;
+    }
 
     .hero-status-row {
         justify-content: center;
+    }
+
+    .hero-cta-row {
+        justify-content: center;
+    }
+
+    .hero-coords {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
     }
 
     .hero-bio {
@@ -1020,5 +1047,17 @@
 
     .hero-visual {
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Hide lanyard string and holder clip on mobile to clean up space and avoid overlaps */
+    .hero-id-badge-container::before,
+    .hero-id-badge-container::after {
+        display: none;
+    }
+
+    .hero-id-badge-container {
+        padding-top: 10px; /* Reduce top padding since lanyard is hidden */
     }
 }

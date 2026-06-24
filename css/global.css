@@ -395,3 +395,47 @@ li:hover,
     color: rgba(50, 200, 255, 0.5);
     font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+    /* Hide custom cursor on mobile touch screens */
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+    body {
+        cursor: auto !important;
+    }
+
+    /* Mobile Sidebar Navigation */
+    #sidebar {
+        transform: translateX(-100%);
+        animation: none !important; /* Disable desktop entrance animation */
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        width: var(--sidebar-width) !important;
+    }
+
+    #sidebar.active {
+        transform: translateX(0) !important;
+    }
+
+    /* Shift content wrapper to take full width */
+    #main-content {
+        margin-left: 0 !important;
+    }
+
+    /* Show hamburger menu toggle */
+    .menu-toggle {
+        display: block !important;
+    }
+
+    /* Reduce default section paddings for mobile viewports */
+    section {
+        padding: 4rem 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
