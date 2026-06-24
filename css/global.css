@@ -481,5 +481,13 @@ li:hover,
     .nav-links li:nth-child(4) {
         display: none !important;
     }
+
+    /* Disable scroll snapping on mobile to allow smooth free scrolling */
+    html {
+        scroll-snap-type: none !important;
+    }
+    section {
+        scroll-snap-align: none !important;
+    }
 }
 

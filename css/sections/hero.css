@@ -1066,4 +1066,13 @@
     .hero-id-badge-container {
         padding-top: 120px; /* Add padding to accommodate lanyard layout */
     }
+
+    /* Disable slide-away exit transition on mobile */
+    .hero-scroll-exit .hero-content,
+    .hero-scroll-exit .hero-visual {
+        transform: none !important;
+        opacity: 1 !important;
+        filter: none !important;
+        transition: none !important;
+    }
 }
