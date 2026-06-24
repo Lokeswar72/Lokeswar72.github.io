@@ -95,6 +95,10 @@ export function initUI() {
     const heroSection = document.getElementById('hero');
     if (heroSection) {
         window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 768) {
+                heroSection.classList.remove('hero-scroll-exit');
+                return;
+            }
             if (window.scrollY > 50) {
                 heroSection.classList.add('hero-scroll-exit');
             } else {

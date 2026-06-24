@@ -966,6 +966,7 @@
         text-align: center;
         gap: 3.5rem;
         padding: 6rem 1.2rem 2rem 1.2rem;
+        background-attachment: scroll !important;
     }
 
     .hero-content {
