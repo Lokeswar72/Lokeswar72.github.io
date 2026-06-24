@@ -1051,13 +1051,19 @@
         justify-content: center;
     }
 
-    /* Hide lanyard string and holder clip on mobile to clean up space and avoid overlaps */
-    .hero-id-badge-container::before,
+    /* Show and position the lanyard string and holder clip on mobile version */
+    .hero-id-badge-container::before {
+        display: flex;
+        top: -90px;
+        height: 220px; /* Reset height to overlap clip and card correctly without gap */
+    }
+
     .hero-id-badge-container::after {
-        display: none;
+        display: block;
+        top: 110px;
     }
 
     .hero-id-badge-container {
-        padding-top: 10px; /* Reduce top padding since lanyard is hidden */
+        padding-top: 120px; /* Add padding to accommodate lanyard layout */
     }
 }

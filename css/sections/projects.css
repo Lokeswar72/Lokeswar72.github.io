@@ -107,3 +107,10 @@
     color: #fff;
     text-shadow: 0 0 5px var(--accent-color);
 }
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

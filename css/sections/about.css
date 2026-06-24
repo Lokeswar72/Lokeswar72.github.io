@@ -162,5 +162,11 @@
 @media (max-width: 900px) {
     .about-container {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .terminal-body {
+        height: 320px;
+        padding: 15px;
     }
 }

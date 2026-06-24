@@ -105,16 +105,8 @@ path.connector.active {
 }
 
 @media (max-width: 768px) {
-    #skill-tree-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 20px;
-    }
-
-    #skill-tree-container,
-    #tree-svg {
-        width: 1100px;
-        min-height: 600px;
+    #skills {
+        display: none !important;
     }
 }
 

@@ -305,7 +305,7 @@ h2::after {
     display: none;
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 2000;
     background: var(--card-bg);
     border: 1px solid var(--accent-color);
@@ -436,6 +436,31 @@ li:hover,
     h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
+    }
+
+    /* Disable scale-on-hover zoom to prevent text wiggling/jumping on tap */
+    p:hover,
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    h4:hover,
+    h5:hover,
+    h6:hover,
+    li:hover,
+    .tech-tag:hover {
+        transform: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Hide absolute secret elements and coordinate tracking overlays on touch screens */
+    .badge-secret-layer,
+    #global-secrets {
+        display: none !important;
+    }
+
+    /* Hide the Skills navigation link on mobile devices */
+    .nav-links li:nth-child(4) {
+        display: none !important;
     }
 }
 
