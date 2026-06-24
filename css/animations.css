@@ -1,0 +1,192 @@
+/* CRT Screen Flicker */
+@keyframes crtFlicker {
+    0% { opacity: 0.55; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.55; }
+}
+
+/* Sidebar entrance */
+@keyframes slideInSidebar {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* General fadeIn */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Hero entrance slide elements */
+@keyframes cyberSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) skewX(-10deg);
+        filter: blur(5px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-5px) skewX(2deg);
+        filter: blur(0);
+    }
+    60% {
+        transform: translateY(2px) skewX(-1deg);
+    }
+    80% {
+        transform: translateY(-1px) skewX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) skewX(0);
+        filter: blur(0);
+    }
+}
+
+/* Hologram Materialization */
+@keyframes hologramEntry {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+        filter: blur(15px) hue-rotate(90deg) brightness(2);
+    }
+    20% {
+        opacity: 0.6;
+        filter: blur(5px) hue-rotate(45deg) brightness(1.5);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.02) translateY(-2px);
+        filter: blur(0) hue-rotate(0) brightness(1.2);
+    }
+    70% {
+        opacity: 0.8;
+        filter: brightness(1.5);
+    }
+    80% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0) brightness(1);
+    }
+}
+
+/* Avatar Entrance Slide */
+@keyframes slideInAvatar {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* General Float Loop */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Hex Spin loop */
+@keyframes spin-hex {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Glowing Border Pulse */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 10px var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    100% {
+        box-shadow: 0 0 25px var(--accent-color);
+        border-color: var(--secondary-accent);
+    }
+}
+
+/* Glitch Animations */
+@keyframes glitch-anim {
+    0% { clip: rect(15px, 9999px, 81px, 0); }
+    20% { clip: rect(78px, 9999px, 19px, 0); }
+    40% { clip: rect(18px, 9999px, 94px, 0); }
+    60% { clip: rect(12px, 9999px, 57px, 0); }
+    80% { clip: rect(61px, 9999px, 32px, 0); }
+    100% { clip: rect(48px, 9999px, 86px, 0); }
+}
+
+@keyframes glitch-anim2 {
+    0% { clip: rect(60px, 9999px, 14px, 0); }
+    20% { clip: rect(93px, 9999px, 63px, 0); }
+    40% { clip: rect(48px, 9999px, 20px, 0); }
+    60% { clip: rect(6px, 9999px, 89px, 0); }
+    80% { clip: rect(45px, 9999px, 11px, 0); }
+    100% { clip: rect(74px, 9999px, 69px, 0); }
+}
+
+@keyframes glitch-skew {
+    0% { transform: skew(0deg); }
+    10% { transform: skew(1deg); }
+    20% { transform: skew(-1deg); }
+    30% { transform: skew(0deg); }
+    40% { transform: skew(3deg); }
+    50% { transform: skew(-2deg); }
+    60% { transform: skew(0deg); }
+    70% { transform: skew(1deg); }
+    80% { transform: skew(-1deg); }
+    90% { transform: skew(2deg); }
+    100% { transform: skew(0deg); }
+}
+
+/* CLI Text Blink */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Badge entry swing loop */
+@keyframes badgeEntrance {
+    0% {
+        opacity: 0;
+        transform: translate(120px, -200px) rotate(-30deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+@keyframes swingBadge {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+/* Red photo scanlines line */
+@keyframes scanPhoto {
+    0% { top: 0%; opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+}
+
+/* SVG Node entry popup */
+@keyframes fadeInNode {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Connector curve dash scroll */
+@keyframes dash {
+    to {
+        stroke-dashoffset: -20;
+    }
+}

@@ -1,0 +1,95 @@
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+.cert-card:hover {
+    border-color: var(--secondary-accent);
+}
+
+.cert-icon {
+    font-size: 2rem;
+    color: var(--secondary-accent);
+}
+
+.cert-org {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* Google Cert Dropdown Accordion */
+.google-cert-card {
+    align-items: flex-start;
+}
+
+.google-cert-card .cert-icon {
+    margin-top: 5px;
+}
+
+.google-cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.google-cert-title {
+    margin-bottom: 0;
+}
+
+.google-cert-arrow {
+    transition: transform 0.3s;
+}
+
+#google-cert-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease, margin-top 0.5s ease;
+    opacity: 0;
+}
+
+.google-cert-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.google-cert-item {
+    display: flex;
+    gap: 8px;
+    align-items: start;
+}
+
+.google-cert-item-icon {
+    color: var(--accent-color);
+    margin-top: 4px;
+}
+
+.google-cert-link {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-color);
+    transition: color 0.3s;
+}
+
+.google-cert-link:hover {
+    color: var(--accent-color);
+}
