@@ -14,10 +14,25 @@ export function initUI() {
         });
     }
 
+    // Close sidebar on click or touch outside (mobile)
+    const handleOutsideInteraction = (e) => {
+        if (window.innerWidth <= 768 && sidebar && sidebar.classList.contains('active')) {
+            if (!sidebar.contains(e.target) && (!menuToggle || !menuToggle.contains(e.target))) {
+                sidebar.classList.remove('active');
+            }
+        }
+    };
+    document.addEventListener('click', handleOutsideInteraction);
+    document.addEventListener('touchstart', handleOutsideInteraction, { passive: true });
+
     if (logoToggle && sidebar) {
         logoToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('collapsed');
-            document.body.classList.toggle('sidebar-collapsed');
+            if (window.innerWidth <= 768) {
+                sidebar.classList.remove('active');
+            } else {
+                sidebar.classList.toggle('collapsed');
+                document.body.classList.toggle('sidebar-collapsed');
+            }
         });
     }
 

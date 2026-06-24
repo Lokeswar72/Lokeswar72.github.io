@@ -46,8 +46,8 @@ form {
     gap: 1rem;
 }
 
-input,
-textarea {
+#contact input,
+#contact textarea {
     padding: 1rem;
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -57,8 +57,8 @@ textarea {
     transition: border-color 0.3s;
 }
 
-input:focus,
-textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
     outline: none;
     border-color: var(--accent-color);
 }

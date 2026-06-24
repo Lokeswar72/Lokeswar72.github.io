@@ -14,6 +14,12 @@ import { initCertifications } from './sections/certifications.js';
 import { initContact } from './sections/contact.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
+    if (window.__portfolio_initialized) {
+        console.log('[SYSTEM: ALREADY INITIALIZED, SKIPPING DUPLICATE INITIALIZATION]');
+        return;
+    }
+    window.__portfolio_initialized = true;
+
     // 1. Asynchronously fetch and inject section HTML templates
     await loadTemplates();
 

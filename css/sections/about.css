@@ -106,7 +106,9 @@
     color: inherit;
     font-family: var(--font-mono);
     font-size: inherit;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
+    width: auto;
     outline: none;
     caret-color: var(--accent-color);
     padding: 0 0 0 8px;

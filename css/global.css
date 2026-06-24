@@ -98,6 +98,9 @@ body.hovering .cursor-outline {
 .layout-container {
     display: flex;
     min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #sidebar {
@@ -307,11 +310,19 @@ h2::after {
     top: 20px;
     left: 20px;
     z-index: 2000;
-    background: var(--card-bg);
+    background: rgba(10, 10, 10, 0.75);
+    backdrop-filter: blur(8px);
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
-    padding: 10px;
+    padding: 12px;
+    border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0 0 10px var(--accent-glow);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Text Interactive Effects (Zoom on Hover) */
@@ -409,23 +420,31 @@ li:hover,
     /* Mobile Sidebar Navigation */
     #sidebar {
         transform: translateX(-100%);
+        visibility: hidden;
         animation: none !important; /* Disable desktop entrance animation */
-        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), visibility 0.3s ease;
         width: var(--sidebar-width) !important;
     }
 
     #sidebar.active {
         transform: translateX(0) !important;
+        visibility: visible !important;
     }
 
     /* Shift content wrapper to take full width */
     #main-content {
         margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     /* Show hamburger menu toggle */
     .menu-toggle {
-        display: block !important;
+        display: flex !important;
+    }
+
+    body:has(#sidebar.active) .menu-toggle {
+        display: none !important;
     }
 
     /* Reduce default section paddings for mobile viewports */

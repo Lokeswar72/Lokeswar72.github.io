@@ -45,6 +45,9 @@ Available commands:
 export function initAbout() {
     const textToType = "./profile.sh";
     const typingElement = document.getElementById('typing-command') || document.querySelector('.typing-command');
+    if (typingElement) {
+        typingElement.textContent = "";
+    }
     let typeIndex = 0;
 
     const terminalInput = document.getElementById('terminal-input');
@@ -80,7 +83,8 @@ export function initAbout() {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
         const aboutObserver = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && typeIndex === 0) {
+            if (entries[0].isIntersecting) {
+                aboutObserver.disconnect();
                 typeWriter();
             }
         }, { threshold: 0.5 });
